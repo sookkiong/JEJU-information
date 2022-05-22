@@ -1,0 +1,453 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Noto Sans KR', sans-serif;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    color:#313131;
+}
+
+ul{list-style:none;}
+a{text-decoration:none;}
+.clear{clear:both;}
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* section1 - home */
+#home{
+    width:100%;
+    height:100vh;
+    -box-sizing:border-box;
+    position:relative;
+}
+video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+header{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    width:100%;
+}
+.h_inner{
+    padding:2vw 5vw;
+}
+#mainlogo{
+    float:left;
+    width:5vw;                    
+}
+#mainlogo a{
+    display:block;
+    background:url("../img/logo.png") no-repeat;  
+    background-size:contain; 
+    width:100%;
+    padding:3vw 0;
+}
+nav{
+    float:right;
+}
+.gnb li{
+    padding-bottom:0.5vw;
+    text-align:right;
+}
+.gnb li a{
+    display:block;
+    width:100%;
+    color:#313131;
+    font-size:1.3vw;
+    font-weight:600;
+    letter-spacing:0.1vw;
+}
+.gnb li a:hover{
+    color:#ed7110;
+}
+
+#h_bottom{
+    position:absolute;
+    bottom:4vw;
+    right:5vw;
+    width:30%;
+    padding:5vw;
+    background:url("../img/hometext.png") no-repeat;
+    background-size:contain;
+}
+
+/* section2 - 여행지 */
+#attraction{
+    width:100%;
+    height:100vh;
+    background:url("../img/attrbg.jpg") no-repeat;
+    background-size:40% 100%;
+}
+#at_text{
+    float:left;
+    padding-left:8vw;
+    padding-top:5vw;
+}
+.at1{
+    font-size:4vw;
+    font-weight:600;
+    letter-spacing:0.5vw;
+    line-height:4.5vw;
+    color:#ed7110;
+}
+.at2{
+    font-size:1vw;
+    color:#ed7110;
+    margin-top:1vw;
+}
+
+.at_right{
+    float:right;
+    width:35%;
+    margin-right:15vw;
+    margin-top:2vw;
+    position:relative;
+}
+#at_para{
+    -border:1px solid red;
+}
+.atp_title{
+    font-size:1.2vw;
+    position:relative;
+    width:6vw;
+    font-weight:600;
+}
+.atp_title::after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:24%;
+    left:0;
+    width:100%;
+    height:63%;
+    background-color:#22ac38;
+    z-index: -1;
+}
+.atp_title::before{
+    content:"SPOT";
+    display:block;
+    position:absolute;
+    left:-80%;
+    top:0;
+    
+}
+.atp_text{
+    font-size: 1vw;
+    margin-top:1vw;
+    line-height:2.3vw;
+    text-align:justify;
+}
+.atp_high{
+    display:inline-block;
+    position:relative;
+}
+.atp_high::after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:30%;
+    left:0;
+    background-color:#22ac38;
+    z-index: -1;
+    width:100%;
+    height:40%;
+}
+
+#go_attr{
+    position:absolute;
+    bottom:-5vw;
+    right:0;
+    border:1px solid #ed7110;
+    
+}
+#go_attr a{
+    display:block;
+    color:#ed7110;
+    padding:0.5vw 2vw;  
+    transition:all 0.3s;
+    font-size:0.8vw;
+}
+#go_attr a:hover{
+    background-color:#ed7110;
+    color:#fff;
+}
+
+/* page navigation */
+ul.pagenav{
+    position:fixed;
+    top:40%;
+    right:3vw;
+    width:2vw;
+    z-index:100;
+}
+ul.pagenav li{
+    width:0.8vw;
+    height:0.8vw;
+    border:1px solid #ed7110;
+    border-radius:50%;
+    margin-bottom:1vw;
+}
+ul.pagenav li a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.pagenav li.navon{
+    background-color:#ed7110;
+}
+
+/* section3 - 여행테마 */
+#theme{
+    width:100%;
+    height:100vh;
+    background:url("../img/orangebg.jpg") no-repeat;
+    background-size:cover;
+    position:relative;
+}
+.theme_title{
+    font-size:4vw;
+    color:#fff;
+    font-family: 'Baskervville', serif;
+    padding-top:5vw;
+    margin-left:8vw;
+    line-height:4vw;
+}
+.theme_photo{
+    width:25%;
+    height:60%;
+    margin:2vw auto 0;
+    background:url("../img/s3bg.png") no-repeat 70% 50%;
+    background-size:cover;
+}
+.theme_text{
+    position:absolute;
+    bottom:10vw;
+    right:19vw;
+    color:#fff;
+    font-size:1vw;
+    line-height:2vw;   
+}
+.go_theme{
+    padding-top:1vw;
+}
+.go_theme a{
+    border:1px solid #fff;
+    padding:0.5vw 2vw;
+    color:#fff;
+    transition:all 0.3s;
+    font-size:0.8vw;
+}
+.go_theme a:hover{
+    background-color:#ed7110;
+    color:#fff;
+    border:1px solid #ed7110;
+}
+
+/* section4 - 여행정보 */
+#information{
+    width:100%;
+    height:100vh;
+    background:url("../img/s4bg.png") no-repeat center 103%;
+    background-size:contain;
+    z-index:-1;
+}
+.info_title{
+    font-size:4vw;
+    font-weight:600;
+    color:#ed7110;
+    padding-top:5vw;
+    margin-left:8vw;
+    line-height:4.2vw;
+    background:url("../img/sun.png") no-repeat 85% 90%;
+
+}
+.info_group{
+    width:60%;
+    margin:4vw auto 0;
+    overflow:hidden;
+}
+.info{
+    width:33.33%;
+    float:left;
+    box-sizing:border-box;
+    text-align:center;
+}
+.info_q{
+    font-size:1.6vw;
+    color:#ed7110;
+    font-weight:600;
+    letter-spacing:0.1vw;
+    position:relative;
+}
+.info_q::after{
+    content:"";
+    display:block;
+    position:absolute;
+}
+.high_move{
+    position:relative;
+    color:#fff;
+}
+.high_move::after{
+    content:"";
+    display:block;
+    position:absolute;
+    width:100%;
+    height:70%;
+    background-color:#22ac38;
+    top:20%;
+    left:0;
+    z-index:-1;
+}
+.info_ans{
+    border-top:1px solid #313131;
+    width:70%;
+    margin:2vw auto 0;
+    padding-top:1vw;
+}
+.info_ans li a{
+    color:#313131;
+    font-size:0.9vw;
+    display:block;
+    font-weight:600;
+    padding:1vw 0;
+}
+.info_ans li a:hover{
+    background-color:#ed7110;
+    color:#fff;
+}
+
+/* section5 - 제주 역사 */
+#history{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+}
+.his_title_wrap{
+    padding-top:5vw;
+    margin-left:8vw;
+}
+.his_title{
+    font-size:4vw;
+    font-weight:500;
+    color:#ed7110;
+    line-height:4.5vw;
+    letter-spacing: 0.2vw;
+    background:url("../img/hischar.png") no-repeat 85% center;
+    background-size:contain;
+}
+.his_small{
+    font-size:1vw;
+    margin-top:1vw;
+    color: #ed7110;
+}
+.his_photo{
+    width:50%;
+    height:32vw;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background:url("../img/hisbg.jpg") no-repeat;
+    background-size:cover;
+}
+.his_content{
+    width:25%;
+    height:32vw;
+    position:absolute;
+    bottom:0;
+    right:13vw;
+}
+.hs_title{
+    font-size:1.2vw;
+    font-weight:600;
+    position:relative;
+}
+.hs_title::after{
+    content:"HISTORY";
+    display:block;
+    position:absolute;
+    top:0;
+    left:-30%;
+}
+.hs_title::before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:25%;
+    left:0;
+    width:35%;
+    height:60%;
+    background-color:#22ac38;
+    z-index:-1;
+
+}
+.hs_text{
+    font-size:1vw;
+    margin-top:1vw;
+    line-height:2.3vw;
+    text-align: justify;
+}
+.go_his{
+    border:1px solid #ed7110;
+    float:right;
+    margin-top:3vw;
+}
+.go_his a{
+    color:#ed7110;
+    padding:0.5vw 2vw;
+    display:block;
+    font-size:0.9vw;
+    transition:all 0.3s;
+}
+.go_his a:hover{
+    background-color:#ed7110;
+    color:#fff;
+}
+
+.hs_high{
+    position:relative;
+    display:inline-block;
+}
+.hs_high::after{
+    content:"";
+    display:block;
+    position:absolute;
+    width:100%;
+    height:45%;
+    top:30%;
+    left:0;
+    z-index:-1;
+    background-color:#22ac38;
+}
+
+.gotop{
+    position:absolute;
+    bottom:0vw;
+    right:0;
+    padding:1.2vw;
+    color:#fff;
+    
+    background-color:#ed7110;
+    z-index:5;
+    cursor:pointer;
+}
+
+
+
+
+
+
