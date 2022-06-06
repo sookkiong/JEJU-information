@@ -1,0 +1,530 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Noto Sans KR', sans-serif;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+.clear{clear:both;}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/* header */
+header{
+    padding:3vw 5vw;
+}
+#gohome{
+    float:left;
+    width:5.2%;
+}
+#gohome a{
+    display:block;
+    color:#ed7110;
+    font-weight:600;
+    font-size:1vw;
+    background:url("../img/home_o.png") no-repeat right center;
+    background-size:25%;
+}
+#gohome a:hover{
+    color:#eb6100;
+    background:url("../img/homehover_o.png") no-repeat right center;
+    background-size:25%;
+}
+nav{
+    float:right;
+}
+
+.gnb>li{
+    float:left;
+    position:relative;
+}
+.gnb>li>a{
+    text-align:right;
+    padding-bottom:0.7vw;
+    font-size:1vw;
+    padding-left:2vw;
+}
+.gnb li a{
+    display:block;
+    color:#ed7110;
+    font-weight:600;
+}
+.submenu li a{
+    text-align:right;
+    padding-bottom:0.4vw;
+    font-style:italic;
+    font-size:0.9vw;
+}
+.gnb>li:hover>a{
+    color:#15703d;
+}
+.submenu li a:hover{
+    color:#15703d;
+}
+
+.gnb li.menuon a{
+    color:#15703d;
+}
+.submenu{
+    display: none;
+    position:absolute;
+    right:0;
+    z-index:10;
+    width:100%;
+}
+
+/* title */
+#attr_title{
+    margin:8vw 10vw 8vw;
+}
+#at1{
+    font-size:8vw;
+    font-weight:600;
+    position:relative;
+    color:#fff;
+}
+#at1::after{
+    content:"";
+    display:block;
+    position:absolute;
+    background-color:#ed7110;
+    width:28%;
+    height:65%;
+    top:20%;
+    left:0;
+    z-index:-1;
+}
+#at2{
+    font-size:3.2vw;
+    font-weight:600;
+    line-height:4vw;
+    letter-spacing:0.2vw;
+    color:#ed7110;
+    background:url("../img/attr_icon.png") no-repeat right bottom;
+    background-size:15%;
+}
+
+/* 지도 */
+#mapclick{
+    padding:5vw 0 0vw;
+}
+#clickme{
+    margin:0 10vw;
+    font-size:1vw;
+    font-weight:600;
+}
+#mapimg{
+    -border:1px solid red;
+    margin:4vw 10vw 0;
+    height:40vw;
+    position:relative;
+}
+.map{
+    position:absolute;
+    height:10vw;
+}
+.map a{
+    display:block;
+    -border:1px solid blue;
+    width:100%;
+    height:100%;
+}
+#map1{
+    top:0;
+    left:calc(50% - 18%);
+    background:url("../img/map1_hover.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+    z-index:1;
+}
+#map2{
+    top:calc(50% - 25%);
+    left:18%;
+    background:url("../img/map2_hover.png") no-repeat center top;
+    background-size:contain;
+    width:24%;
+    height:50%;
+}
+#map3{
+    bottom:13%;
+    right:calc(50% - 24%);
+    background:url("../img/map3_hover.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+}
+#map4{
+    top:3%;
+    right:7%;
+    background:url("../img/map4_hover.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+}
+
+#map1:hover{
+    background:url("../img/map1.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+}
+#map2:hover{
+    top:calc(50% - 25%);
+    left:18%;
+    background:url("../img/map2.png") no-repeat center top;
+    background-size:contain;
+    width:24%;
+    height:50%;
+}
+#map3:hover{
+    background:url("../img/map3.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+}
+#map4:hover{
+    background:url("../img/map4.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+}
+
+#map1.mapon{
+    top:0;
+    left:calc(50% - 18%);
+    background:url("../img/map1.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+    z-index:1;
+}
+#map2.mapon{
+    background:url("../img/map2.png") no-repeat center top;
+    background-size:contain;
+    width:24%;
+    height:50%;
+    z-index:1;
+}
+#map3.mapon{
+    background:url("../img/map3.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+}
+#map4.mapon{
+    background:url("../img/map4.png") no-repeat center top;
+    background-size:contain;
+    width:36%;
+    height:50%;
+}
+
+/* 지역 별 관광지 */
+.mapinfo_wrap{
+    margin:0 15vw;
+}
+.mapinfo li{
+    float:left;
+    width:27%;
+    height:24vw;
+    box-sizing: border-box;
+    margin-bottom:3vw;
+    border-radius: 9%;
+    box-shadow:0 0 50px rgba(0,0,0,0.1);
+    position:relative;
+    padding:0 1vw;
+}
+.mapinfo li:not(:nth-child(3n)){
+    margin-right:9.5%;
+}
+.mptext{
+    position:absolute;
+    bottom:2.2vw;
+}
+.mptext span{
+    display:block;
+    width:100%;
+    color:beige;
+}
+.attr_cate{
+    font-size:1vw;
+}
+.attr_name{
+    font-size:1.5vw;
+    font-weight:600;
+    letter-spacing:0.1vw;
+}
+.attr_spot{
+    font-size:0.8vw;
+    margin-top:0.3vw;
+}
+
+/* map1 */
+#mapinfo1 li:nth-child(1){
+    background:url("../img/mf1-1.jpg") no-repeat 75% center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(2){
+    background:url("../img/mf1-2.jpg") no-repeat 75% center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(3){
+    background:url("../img/mf1-3.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(4){
+    background:url("../img/mf1-4.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(5){
+    background:url("../img/mf1-5.jpg") no-repeat 75% center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(6){
+    background:url("../img/mf1-6.jpg") no-repeat 60% center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(7){
+    background:url("../img/mf1-7.jpg") no-repeat 60% center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(8){
+    background:url("../img/mf1-8.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(9){
+    background:url("../img/mf1-9.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(10){
+    background:url("../img/mf1-10.jpg") no-repeat 75% center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(11){
+    background:url("../img/mf1-11.jpg") no-repeat 55% center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(12){
+    background:url("../img/mf1-12.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo1 li:nth-child(13){
+    background:url("../img/mf1-13.jpg") no-repeat center center;
+    background-size:cover;
+}
+
+/* map2 */
+#mapinfo2 li:nth-child(1){
+    background:url("../img/mf2-1.jpg") no-repeat 28% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(2){
+    background:url("../img/mf2-2.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(3){
+    background:url("../img/mf2-3.jpg") no-repeat 40% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(4){
+    background:url("../img/mf2-4.jpg") no-repeat 62% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(5){
+    background:url("../img/mf2-5.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(6){
+    background:url("../img/mf2-6.jpg") no-repeat 60% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(7){
+    background:url("../img/mf2-7.jpg") no-repeat 0% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(8){
+    background:url("../img/mf2-8.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(9){
+    background:url("../img/mf2-9.jpg") no-repeat 85% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(10){
+    background:url("../img/mf2-10.jpg") no-repeat 75% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(11){
+    background:url("../img/mf2-11.jpg") no-repeat 55% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(12){
+    background:url("../img/mf2-12.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(13){
+    background:url("../img/mf2-13.jpg") no-repeat 60% center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(14){
+    background:url("../img/mf2-14.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(15){
+    background:url("../img/mf2-15.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(16){
+    background:url("../img/mf2-16.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo2 li:nth-child(17){
+    background:url("../img/mf2-17.jpg") no-repeat center center;
+    background-size:cover;
+}
+
+/* map3 */
+#mapinfo3 li:nth-child(1){
+    background:url("../img/mf3-1.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(2){
+    background:url("../img/mf3-2.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(3){
+    background:url("../img/mf3-3.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(4){
+    background:url("../img/mf3-4.jpg") no-repeat 62% center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(5){
+    background:url("../img/mf3-5.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(6){
+    background:url("../img/mf3-6.jpg") no-repeat 20% center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(7){
+    background:url("../img/mf3-7.jpg") no-repeat 56% center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(8){
+    background:url("../img/mf3-8.jpg") no-repeat center 30%;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(9){
+    background:url("../img/mf3-9.jpg") no-repeat 85% center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(10){
+    background:url("../img/mf3-10.jpg") no-repeat 75% center;
+    background-size:cover;
+}
+#mapinfo3 li:nth-child(11){
+    background:url("../img/mf3-11.jpg") no-repeat 90% center;
+    background-size:cover;
+}
+
+/* map4 */
+#mapinfo4 li:nth-child(1){
+    background:url("../img/mf4-1.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(2){
+    background:url("../img/mf4-2.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(3){
+    background:url("../img/mf4-3.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(4){
+    background:url("../img/mf4-4.jpg") no-repeat 20% bottom;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(5){
+    background:url("../img/mf4-5.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(6){
+    background:url("../img/mf4-6.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(7){
+    background:url("../img/mf4-7.jpg") no-repeat 56% center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(8){
+    background:url("../img/mf4-8.jpg") no-repeat center 30%;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(9){
+    background:url("../img/mf4-9.jpg") no-repeat 85% center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(10){
+    background:url("../img/mf4-10.jpg") no-repeat 75% center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(11){
+    background:url("../img/mf4-11.jpg") no-repeat center center;
+    background-size:cover;
+}
+#mapinfo4 li:nth-child(12){
+    background:url("../img/mf4-12.jpg") no-repeat 90% center;
+    background-size:cover;
+}
+
+
+
+
+#anotherbtn{
+    text-align:center;
+    color:#000;
+    font-weight: 600;
+    font-size:1vw;
+    margin-top:3vw;
+}
+#anotherbtn a{
+    color:#dcdcdc;
+}
+#anotherbtn a:hover{
+    color:#ed7110;
+}
+
+
+/* footer */
+footer{
+    margin:20vw 10vw 1vw;
+    height:0.8vw;
+}
+.copylogo{
+    position:relative;
+}
+.copylogo p{
+    position:absolute;
+    bottom:0;
+    right:5vw;
+    color:#eba97a;
+}
+.f_logo{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:4.3vw;
+    height:5vw;
+    background:url("../img/f_logo.png") no-repeat right center;
+    background-size:contain;
+}
+
+

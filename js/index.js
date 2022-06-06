@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-AOS.init()
+AOS.init();
 
 // go top
 $(".gotop").on("click",function(){

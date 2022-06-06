@@ -5,8 +5,453 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Have A Nice JEJU > 여행지</title>
+    <link rel="stylesheet" href="css/attr.css" type="text/css"/>
+    <script src="js/jquery-3.6.0.js" type="text/javascript" text="javascript"></script>
+    <script src="js/attr.js" type="text/javascript" text="javascript"></script>
 </head>
 <body>
+    <header>
+        <div id="gohome"><a href="index.html">HOME</a></div>
+
+        <nav>
+            <ul class="gnb">
+                <li class="menuon"><a href="attr.html">여행지</a></li>
+                <li><a href="#">여행테마</a></li>
+                <li><a href="#">여행정보</a>
+                    <ul class="submenu">
+                        <li><a href="#">이동수단</a></li>
+                        <li><a href="#">날씨정보</a></li>
+                        <li><a href="#">의료기관</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT JEJU</a>
+                    <ul class="submenu">
+                        <li><a href="history.html">역사정보</a></li>
+                        <li><a href="article.html">보도자료</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="clear"></div>
+
+    <div id="attr_title">
+        <h1 id="at1">여행지</h1>
+        <p id="at2">동서남북으로 펼쳐진<br/># 자연경관<br/># 어트랙션<br/># 먹거리</p>
+    </div>
+
+    <div id="mapclick">
+        <div id="clickme">여행하고 싶은 지역을 클릭해보세요!</div>
+
+        <div id="mapimg">
+            <div id="map1" class="map mapon"><a href="#mapinfo1"></a></div>
+            <div id="map2" class="map"><a href="#mapinfo2"></a></div>
+            <div id="map3" class="map"><a href="#mapinfo3"></a></div>
+            <div id="map4" class="map"><a href="#mapinfo4"></a></div>
+        </div>
+    </div>
+
+
+    <div class="mapinfo_wrap">
+        <!-- 1. 제주시/애월/조천 -->
+        <div id="mapinfo1" class="mapinfo">
+            <ul class="clearfix">
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[제주시]</span>
+                        <span class="attr_name">이호테우 해수욕장</span>
+                        <span class="attr_spot">제주특별자치도 제주시 도리로 20</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[제주시]</span>
+                        <span class="attr_name">한라수목원</span>
+                        <span class="attr_spot">제주특별자치도 제주시 수목원길 72</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[제주시]</span>
+                        <span class="attr_name">남국사</span>
+                        <span class="attr_spot">제주특별자치도 제주시 아라일동 499-1</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[제주시]</span>
+                        <span class="attr_name">도두봉</span>
+                        <span class="attr_spot">제주특별자치도 제주시 도두동 산 1</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[제주시]</span>
+                        <span class="attr_name">용연계곡</span>
+                        <span class="attr_spot">제주특별자치도 제주시 용담1동 동한두기길 35</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[애월]</span>
+                        <span class="attr_name">곽지해수욕장</span>
+                        <span class="attr_spot">제주특별자치도 제주시 애월읍 애월원당길 (곽지리)</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[애월]</span>
+                        <span class="attr_name">구엄리 돌염전</span>
+                        <span class="attr_spot">제주특별자치도 제주시 애월읍 애월해안로 708</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[애월]</span>
+                        <span class="attr_name">새별오름</span>
+                        <span class="attr_spot">제주특별자치도 제주시 애월읍 봉성리 산 59-8</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[애월]</span>
+                        <span class="attr_name">상가리야자숲</span>
+                        <span class="attr_spot">제주특별자치도 제주시 애월읍 상가리 536</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[조천]</span>
+                        <span class="attr_name">함덕해수욕장</span>
+                        <span class="attr_spot">제주특별자치도 제주시 조천읍 조함해안로 519-10</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[조천]</span>
+                        <span class="attr_name">와흘메밀마을</span>
+                        <span class="attr_spot">제주특별자치도 제주시 조천읍 남조로 2455</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[조천]</span>
+                        <span class="attr_name">에코랜드</span>
+                        <span class="attr_spot">제주특별자치도 제주시 조천읍 번영로 1278-169</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[조천]</span>
+                        <span class="attr_name">함덕서우봉</span>
+                        <span class="attr_spot">제주특별자치도 제주시 조천읍 함덕리 169-1</span>
+                    </p>
+                </li>
+            </ul>    
+        </div>
+
+        <!-- 2. 한림/한경/대정/안덕 -->
+        <div id="mapinfo2" class="mapinfo">
+            <ul class="clearfix">
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한림]</span>
+                        <span class="attr_name">한림공원</span>
+                        <span class="attr_spot">제주특별자치도 제주시 한림읍 한림로 300</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한림]</span>
+                        <span class="attr_name">선인장군락지</span>
+                        <span class="attr_spot">제주특별자치도 제주시 한림읍 월령3길 27-4</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한림]</span>
+                        <span class="attr_name">성이시돌목장</span>
+                        <span class="attr_spot">제주특별자치도 제주시 특별자치도 한림읍 금악리</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한림]</span>
+                        <span class="attr_name">명월성지</span>
+                        <span class="attr_spot">제주특별자치도 제주시 한림읍 동명리</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한림]</span>
+                        <span class="attr_name">금악오름</span>
+                        <span class="attr_spot">제주특별자치도 제주시 한림읍 금악리 산1-1</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한림]</span>
+                        <span class="attr_name">협재해수욕장</span>
+                        <span class="attr_spot">제주특별자치도 제주시 한림읍 한림로 329-10</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한경]</span>
+                        <span class="attr_name">신창풍차해안도로</span>
+                        <span class="attr_spot">제주특별자치도 제주시 한경면 신창리 1322-1</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한경]</span>
+                        <span class="attr_name">당산봉</span>
+                        <span class="attr_spot">제주특별자치도 제주시 한경면 고산리 산 15</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한경]</span>
+                        <span class="attr_name">자구내포구</span>
+                        <span class="attr_spot">제주특별자치도 제주시 한경면 노을해안로 1161</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[한경]</span>
+                        <span class="attr_name">환상숲곶자왈</span>
+                        <span class="attr_spot">제주시 특별자치도, 한경면 녹차분재로 594-1</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[대정]</span>
+                        <span class="attr_name">도구리알</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 대정읍 신도리 3127-2</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[대정]</span>
+                        <span class="attr_name">어린왕자감귤밭</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 대정읍 안성리 1701</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[안덕]</span>
+                        <span class="attr_name">산방산</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 안덕면 사계리 산 16</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[안덕]</span>
+                        <span class="attr_name">사계해변</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 안덕면 사계리</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[안덕]</span>
+                        <span class="attr_name">오설록티뮤지엄</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 안덕면 신화역사로 15</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[안덕]</span>
+                        <span class="attr_name">카멜리아힐</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 안덕면 병악로 166</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[안덕]</span>
+                        <span class="attr_name">용머리해안</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 안덕면 사계리</span>
+                    </p>
+                </li>
+            </ul>    
+        </div>
+
+        <!-- 3. 중문,서귀포 / 남원 -->
+        <div id="mapinfo3" class="mapinfo">
+            <ul class="clearfix">
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[중문]</span>
+                        <span class="attr_name">천제연폭포</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 중문동 2232</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[서귀포]</span>
+                        <span class="attr_name">정방폭포</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 칠십리로214번길 37</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[서귀포]</span>
+                        <span class="attr_name">돈내코원앙폭포</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 토평동 산5</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[서귀포]</span>
+                        <span class="attr_name">쇠소깍</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 쇠소깍로 138</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[서귀포]</span>
+                        <span class="attr_name">서귀포매일올레시장</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 특별자치도, 중앙로62번길 18</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[남원]</span>
+                        <span class="attr_name">위미리수국길</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 남원읍 위미리 668-4</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[남원]</span>
+                        <span class="attr_name">큰엉해안경승지</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 남원읍 남원 2리</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[남원]</span>
+                        <span class="attr_name">물영아리오름</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 남원읍 수망리 산188</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[남원]</span>
+                        <span class="attr_name">고살리숲길</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 남원읍 하례리 산54-1</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[남원]</span>
+                        <span class="attr_name">효명사</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 남원읍 하례리</span>
+                    </p>
+                </li>
+            </ul>    
+        </div>
+
+        <!-- 4. 표선 / 성산 / 구좌 -->
+        <div id="mapinfo4" class="mapinfo">
+            <ul class="clearfix">
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[표선]</span>
+                        <span class="attr_name">백약이오름</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 표선면 성읍리 산 1</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[표선]</span>
+                        <span class="attr_name">개오름</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 표선면 성읍이리로57번길 162</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[표선]</span>
+                        <span class="attr_name">성읍민속마을</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 표선면 성읍정의현로 30번지</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[표선]</span>
+                        <span class="attr_name">영주산오름</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 표선면 성읍1리</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[표선]</span>
+                        <span class="attr_name">표선해수욕장</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 표선면 표선리</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[성산]</span>
+                        <span class="attr_name">성산일출봉</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 성산읍 성산리 일출로 284-12</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[성산]</span>
+                        <span class="attr_name">혼인지</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 특별자치도, 성산읍 온평리 1693</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[성산]</span>
+                        <span class="attr_name">섭지코지</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 성산읍 섭지코지로</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[성산]</span>
+                        <span class="attr_name">광치기해변</span>
+                        <span class="attr_spot">제주특별자치도 서귀포시 성산읍 섭지코지로 63</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[구좌]</span>
+                        <span class="attr_name">비자림</span>
+                        <span class="attr_spot">제주특별자치도 제주시 구좌읍 비자숲길 55</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[구좌]</span>
+                        <span class="attr_name">종달리해안도로</span>
+                        <span class="attr_spot">제주특별자치도 제주시 구좌읍 종달리 615-14</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="mptext">
+                        <span class="attr_cate">[구좌]</span>
+                        <span class="attr_name">송당무끈모루</span>
+                        <span class="attr_spot">제주특별자치도 제주시 구좌읍 송당리 2089</span>
+                    </p>
+                </li>
+            </ul>    
+        </div>
+
+        <div id="anotherbtn">I want to see <a href="#mapclick">another area!</a></div>
+        <div class="clear"></div>
+    </div>
+
+    <footer>
+        <div class="copylogo">
+            <p>ⓒ 2022. Sohn Soo Kyung All Rights reserved.</p>
+            <div class="f_logo"></div>
+        </div>
+        <div class="clear"></div>
+    </footer>
     
 </body>
 </html>

@@ -1,0 +1,447 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Noto Sans KR', sans-serif;
+}
+body{color:#313131;}
+ul{list-style: none;}
+a{text-decoration: none;}
+.clear{clear:both;}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/* header */
+header{
+    padding:3vw 5vw;
+}
+#gohome{
+    float:left;
+    width:5.2%;
+}
+#gohome a{
+    display:block;
+    color:#ed7110;
+    font-weight:600;
+    font-size:1vw;
+    background:url("../img/home_o.png") no-repeat right center;
+    background-size:25%;
+}
+#gohome a:hover{
+    color:#eb6100;
+    background:url("../img/homehover_o.png") no-repeat right center;
+    background-size:25%;
+}
+nav{
+    float:right;
+}
+
+.gnb>li{
+    float:left;
+    position:relative;
+}
+.gnb>li>a{
+    text-align:right;
+    padding-bottom:0.7vw;
+    font-size:1vw;
+    padding-left:2vw;
+}
+.gnb li a{
+    display:block;
+    color:#ed7110;
+    font-weight:600;
+}
+.submenu li a{
+    text-align:right;
+    padding-bottom:0.4vw;
+    font-style:italic;
+    font-size:0.9vw;
+}
+.gnb>li:hover>a{
+    color:#15703d;
+}
+.submenu li a:hover{
+    color:#15703d;
+}
+
+.gnb li.menuon a{
+    color:#15703d;
+}
+.submenu{
+    display: none;
+    position:absolute;
+    right:0;
+    z-index:10;
+    width:100%;
+}
+
+/* title */
+#attr_title{
+    margin:8vw 10vw 0vw;
+    border-bottom:1px solid #000;
+    padding-bottom:8vw;
+}
+#at1{
+    font-size:8vw;
+    font-weight:600;
+    position:relative;
+    color:#fff;
+}
+#at1::after{
+    content:"";
+    display:block;
+    position:absolute;
+    background-color:#ed7110;
+    width:37%;
+    height:65%;
+    top:20%;
+    left:0;
+    z-index:-1;
+}
+#at2{
+    font-size:3.2vw;
+    font-weight:600;
+    line-height:4vw;
+    letter-spacing:0.2vw;
+    color:#ed7110;
+    background:url("../img/vehicle_icon.png") no-repeat right bottom;
+    background-size:15%;
+}
+
+/* 탭 */
+#vehicle_tab{
+    margin:5vw 10vw;
+}
+.tab_text{
+    float:left;
+    font-size:3vw;
+    font-weight:600;
+    color:#313131;
+}
+.tabs{
+    float:left;
+    margin-left:5vw;
+    margin-top:1.4vw;
+}
+.tabs li{
+    float:left;
+
+}
+.tabs li a{
+    font-size:1.4vw;
+    font-weight:600;
+    color:#313131;
+    padding:0.3vw 4vw;
+}
+.tabs li a:hover{
+    color:#ed7110;
+}
+.tabs li.tabon a{
+    border:3px solid #313131;
+    box-sizing: border-box;
+}
+
+/*==== 버스 section ====*/
+.select_section{
+    margin:0 10vw;
+}
+.select_text{
+    float:left;
+    font-size:1vw;
+    font-weight:600;
+    padding:0.5vw 0;
+}
+.bus_menu{
+    float:right;
+    position:absolute;
+    right:10vw;
+    z-index:5;
+}
+#dtn_title{
+    cursor:pointer;
+    font-size:1vw;
+    font-weight:600;
+    border:2px solid #313131;
+    padding:0.5vw 4vw 0.5vw 2vw;
+    background:url("../img/dropdown-off.png") no-repeat 90% center;
+    background-size:6%;
+}
+#dtn_title.up{
+    background:url("../img/dropdown_on.png") no-repeat 90% center;
+    background-size:6%;
+}
+.dtn_sub{
+    border:1px solid #313131;
+    box-sizing:border-box;
+    display:none;
+}
+.dtn_sub li{
+    width:100%;
+
+}
+.dtn_sub li a{
+    padding-bottom:1vw;
+    display:block;
+    padding-left:2vw;
+    padding-top:1vw;
+    color:#313131;
+    border-bottom:1px solid #ccc;
+    background-color:#fff;
+}
+.dtn_sub li a:hover{
+    font-weight:600;
+}
+
+.dtn{
+    margin:5vw 10vw;
+}
+#dtnbox1{
+    padding-bottom:5vw;
+    margin-bottom:5vw;
+    border-bottom:1px solid #ececec;
+}
+.busnum{
+    font-size:1.4vw;
+    font-weight:600;
+    float:left;
+}
+.buscolor{
+    background-color:#ed7110;
+    padding:0.1vw 1vw;
+    color:#fff;
+    display:inline-block;
+    margin-right:1vw;
+    font-size:1vw;
+    
+}
+.bustime{
+    float:right;
+    font-size:1.4vw;
+    font-weight:600;
+}
+.bustime span{
+    color:#ed7110;
+}
+
+.bus_on{
+    font-size:1vw;
+    margin:5vw 0 3vw;
+    padding:1vw 5vw;
+    background:url("../img/busstop-icon.png") no-repeat left center;
+    background-size:contain;
+}
+.bus_move{
+    font-size:1vw;
+    margin:0 0 3vw;
+    padding:1vw 5vw;
+    background:url("../img/bus-icon.png") no-repeat left center;
+    background-size:contain;
+}
+.busstop{
+    border-left:3px solid #ed7110;
+    padding-left:1vw;
+    margin-left:1.5vw;
+}
+.bus_trans{
+    font-size:1vw;
+    margin:5vw 0 5vw;
+    padding:1vw 5vw;
+    background:url("../img/trans.png") no-repeat left center;
+    background-size:contain;
+}
+.busstop li{
+    margin-bottom:1vw;
+}
+
+/*==== 렌트카 section ====*/
+#rentcar_contents{
+    padding:0 15vw;
+}
+#carlist li{
+    width:40%;
+    border-bottom:1px solid #313131;
+    box-sizing: border-box;
+    float:left;
+}
+#carlist li:not(:nth-child(2n)){
+    margin-right:10vw;
+}
+#carlist li a{
+    display:block;
+    padding:3vw 1vw;
+    color:#313131;
+    font-size:1.5vw;
+    font-weight:600;
+}
+#carlist li:hover .list_address{
+    background:url("../img/gosite_hover.png") no-repeat right center;
+    background-size:contain;
+}
+.list_address{
+    display:block;
+    color:#ccc;
+    font-size:1vw;
+    font-weight:300;
+    margin-top:0.5vw;
+    background:url("../img/gosite.png") no-repeat right center;
+    background-size:contain;
+}
+
+#gorentcar{
+    margin:5vw 0 0;
+    text-align:center;
+    
+}
+#gorentcar a{
+    color:#313131;
+    font-weight:600;
+    font-size:1.2vw;
+}
+.seemore{
+    color:#ccc;
+}
+#gorentcar a:hover .seemore{
+    color:#ed7110;
+}
+
+/*==== 택시 section ====*/
+#taxi_contents{
+    margin:0 10vw;
+}
+#tc1{
+    margin-bottom:10vw;
+}
+.tc_title{
+    color:#ed7110;
+    font-size:1vw;
+    font-weight:600;
+    float:left;
+    width:10%;
+}
+.tc_title span{
+    display:block;
+    font-size:0.9vw;
+    color:#ccc;
+    font-weight:500;
+}
+.tc_right{
+    float:left;
+    margin-left:5vw;
+    position:relative;
+    width:80%;
+    
+}
+#tc_right1{
+    height:45vw;
+}
+.tr_text{
+    font-weight:600;
+    font-size:1vw;
+}
+
+#box1{
+    width:30%;
+    position:absolute;
+    top:5vw;
+    left:0;
+    height:20vw;
+}
+#box_photo1{
+    width:100%;
+    height:55%;
+    background:url("../img/taxi1.jpg") no-repeat left 90%;
+    background-size:cover;
+}
+.box_text{
+    margin-top:1vw;
+    font-size:1vw;
+    font-weight:600;
+}
+.box_text_small{
+    font-size:0.9vw;
+    color:#ccc;
+    margin-top:0.5vw;
+}
+
+#box2{
+    position:absolute;
+    right:15vw;
+    top:15vw;
+    width:30%;
+    height:12vw;
+    background:url("../img/taxi2.jpg") no-repeat center 90%;
+    background-size:cover;
+}
+
+#box3{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+#box_photo3{
+    float:left;
+    width:20vw;
+    height:12vw;
+    background:url("../img/taxi3.jpg") no-repeat left 90%;
+    background-size:cover;
+}
+.box_text_wrap{
+    float:left;
+    margin-left:2vw;
+    padding-top:2vw;   
+}
+
+.taxi_list{
+    margin-top:3vw;
+}
+.taxi_list li{
+    margin-bottom:4vw;
+}
+.txt_title{
+    font-size:1vw;
+    font-weight:600;
+    color:#ed7110;
+}
+.txt_title span{
+    display:inline-block;
+    margin-left:1vw;
+    font-size:0.9vw;
+    color:#ccc;
+    font-weight:400;
+}
+.txt_text{
+    font-size:1vw;
+    margin-top:1vw;
+    font-weight:600;
+}
+
+
+
+/* footer */
+footer{
+    margin:20vw 10vw 1vw;
+    height:0.8vw;
+}
+.copylogo{
+    position:relative;
+}
+.copylogo p{
+    position:absolute;
+    bottom:0;
+    right:5vw;
+    color:#eba97a;
+}
+.f_logo{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:4.3vw;
+    height:5vw;
+    background:url("../img/f_logo.png") no-repeat right center;
+    background-size:contain;
+}
