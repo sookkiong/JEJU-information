@@ -113,9 +113,54 @@ nav{
     background-size:15%;
 }
 
-/* 응급실 정보 */
+
 #hospital_list{
     margin:5vw 10vw 0;
+}
+.hos_title{
+    color:#ed7110;
+    font-weight:600;
+    font-size:1vw;
+}
+.hos_title span{
+    display:block;
+    color:#ccc;
+    font-weight:400;
+    font-size:0.9vw;
+}
+#er_list{
+    margin-top:3vw;
+    border-collapse: collapse;
+}
+#er_list tr:nth-of-type(1){
+    background-color:#ed7110;
+    
+}
+#er_list tr:nth-of-type(1) th{
+    font-size:1vw;
+    color:#fff;
+    padding:0.8vw 0;
+    display:inline-block;
+    width:26vw;
+}
+#er_list td{
+    font-size:1vw;
+    display:inline-block;
+    width:26vw;
+    text-align:center;
+    padding:1.5vw 0;
+    border-bottom:1px solid #ed7110;
+    font-weight:500;
+}
+#er_list td:not(:last-child){
+    border-right:1px solid #ed7110;
+}
+
+#pharm{
+    margin-top:7vw;
+}
+#mh{
+    margin-top:7vw;
 }
 
 

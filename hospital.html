@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/hospital.css" type="text/css"/>
     <script src="js/jquery-3.6.0.js" type="text/javascript" text="javascript"></script>
     <script src="js/hospital.js" type="text/javascript" text="javascript"></script>
+
+    <link rel="stylesheet" href="aos/dist/aos.css"/>
+    <script src="aos/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -17,15 +20,14 @@
         <nav>
             <ul class="gnb">
                 <li><a href="attr.html">여행지</a></li>
-                <li><a href="#">여행테마</a></li>
-                <li><a href="#">여행정보</a>
+                <li><a href="theme.html">여행테마</a></li>
+                <li><a href="vehicle.html">여행정보</a>
                     <ul class="submenu">
-                        <li><a href="#">이동수단</a></li>
-                        <li><a href="#">날씨정보</a></li>
-                        <li><a href="#">의료기관</a></li>
+                        <li><a href="vehicle.html">이동수단</a></li>
+                        <li><a href="hospital.html">의료기관</a></li>
                     </ul>
                 </li>
-                <li><a href="#">ABOUT JEJU</a>
+                <li><a href="history.html">ABOUT JEJU</a>
                     <ul class="submenu">
                         <li><a href="history.html">역사정보</a></li>
                         <li><a href="article.html">보도자료</a></li>
@@ -36,7 +38,7 @@
     </header>
     <div class="clear"></div>
 
-    <div id="attr_title">
+    <div id="attr_title" data-aos="fade-up" data-aos-duration="1000">
         <h1 id="at1">의료기관</h1>
         <p id="at2">여행 중 응급상황이 생겼다면?<br/># 24시 응급실<br/># 심야 운영 약국<br/># 산부인과</p>
     </div>
@@ -88,6 +90,122 @@
                 </tr>
             </table>
         </div>
+
+        <div id="pharm">
+            <div class="hos_title">심야 운영 약국<span>Late-night pharmacy</span></div>
+
+            <table id="er_list">
+                <tr>
+                    <th>약국 이름</th>
+                    <th>주소</th>
+                    <th>전화번호</th>
+                </tr>
+                <tr>
+                    <td>부부약국</td>
+                    <td>제주특별자치도 제주시 신대로 16길 41(연동)</td>
+                    <td>064-747-5252</td>
+                </tr>
+                <tr>
+                    <td>새우리약국</td>
+                    <td>제주특별자치도 제주시 서사로 36</td>
+                    <td>064-757-5149</td>
+                </tr>
+                <tr>
+                    <td>조천약국</td>
+                    <td>제주특별자치도 제주시 조천읍 신북로 226</td>
+                    <td>064-783-8989</td>
+                </tr>
+                <tr>
+                    <td>영재약국</td>
+                    <td>제주특별자치도 제주시 조천읍 신북로 510-1</td>
+                    <td>064-783-1959</td>
+                </tr>
+                <tr>
+                    <td>현재약국</td>
+                    <td>제주특별자치도 제주시 한림읍 한림로 650</td>
+                    <td>064-796-9333</td>
+                </tr>
+                
+            </table>
+        </div>
+
+        <div id="mh">
+            <div class="hos_title">산부인과<span>Maternity Hospital</span></div>
+
+            <table id="er_list">
+                <tr>
+                    <th>병원 이름</th>
+                    <th>주소</th>
+                    <th>전화번호</th>
+                </tr>
+                <tr>
+                    <td>파랑새의원</td>
+                    <td>제주특별자치도 제주시 노연로 90, 2층(연동) </td>
+                    <td>064-711-8042</td>
+                </tr>
+                <tr>
+                    <td>엔젤산부인과의원</td>
+                    <td>제주특별자치도 제주시 과원로 70, 2층(연동 부림랜드)</td>
+                    <td>064-756-7575</td>
+                </tr>
+                <tr>
+                    <td>차산부인과의원</td>
+                    <td>제주특별자치도 제주시 노형8길 2 온유빌딩 2층</td>
+                    <td>064-742-9661</td>
+                </tr>
+                <tr>
+                    <td>서해산부인과의원</td>
+                    <td>제주특별자치도 제주시 동광로 131(일도이동)</td>
+                    <td>064-758-8866</td>
+                </tr>
+                <tr>
+                    <td>한나산부인과의원</td>
+                    <td>제주특별자치도 제주시 도형로 7, 2층 일부(노형동)</td>
+                    <td>064-711-7717</td>
+                </tr>
+                <tr>
+                    <td>다나산부인과의원</td>
+                    <td>제주특별자치도 제주시 고마로 47(일도이동)</td>
+                    <td>064-702-1186</td>
+                </tr>
+                <tr>
+                    <td>예나산부인과의원</td>
+                    <td>제주특별자치도 제주시 서광로 83(용담이동)</td>
+                    <td>064-748-0088</td>
+                </tr>
+                <tr>
+                    <td>한수풀의원</td>
+                    <td>제주특별자치도 제주시 한림읍 한림도 681</td>
+                    <td>064-796-3789</td>
+                </tr>
+                <tr>
+                    <td>삼성산부인과의원</td>
+                    <td>제주특별자치도 제주시 동광로 27(이도일동)</td>
+                    <td>064-721-0555</td>
+                </tr>
+                <tr>
+                    <td>에덴산부인과의원</td>
+                    <td>제주특별자치도 제주시 수덕로 6, 3,4,5층(노형동)</td>
+                    <td>064-748-9400</td>
+                </tr>
+                <tr>
+                    <td>제주필의원</td>
+                    <td>제주특별자치도 제주시 일주동로 229(화북일동)</td>
+                    <td>064-726-6300</td>
+                </tr>
+                <tr>
+                    <td>마리산부인과</td>
+                    <td>제주특별자치도 제주시 고마로 146(이도이동)</td>
+                    <td>064-755-2544</td>
+                </tr>
+                <tr>
+                    <td>이주영산부인과의원</td>
+                    <td>제주특별자치도 제주시 서광로 208-1</td>
+                    <td>064-756-1199</td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 
     <footer>

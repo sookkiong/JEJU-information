@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Noto Sans KR', sans-serif;
+}
+body{background-color: #ed7110;}
+ul{list-style: none;}
+a{text-decoration: none;}
+.clear{clear:both;}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/* header */
+header{
+    padding:3vw 5vw;
+}
+#gohome{
+    float:left;
+    width:5.2%;
+}
+#gohome a{
+    display:block;
+    color:#fff;
+    font-weight:600;
+    font-size:1vw;
+    background:url("../img/home.png") no-repeat right center;
+    background-size:25%;
+}
+#gohome a:hover{
+    color:beige;
+    background:url("../img/homehover.png") no-repeat right center;
+    background-size:25%;
+}
+nav{
+    float:right;
+}
+
+.gnb>li{
+    float:left;
+    position:relative;
+}
+.gnb>li>a{
+    text-align:right;
+    padding-bottom:0.7vw;
+    font-size:1vw;
+    padding-left:2vw;
+}
+.gnb li a{
+    display:block;
+    color:#fff;
+    font-weight:600;
+}
+.submenu li a{
+    text-align:right;
+    padding-bottom:0.4vw;
+    font-style:italic;
+    font-size:0.9vw;
+}
+.gnb>li:hover>a{
+    color:#15703d;
+}
+.submenu li a:hover{
+    color:#15703d;
+}
+
+.gnb li.menuon a{
+    color:#15703d;
+}
+.submenu{
+    display: none;
+    position:absolute;
+    right:0;
+    z-index:10;
+    width:100%;
+}
+
+#article_wrap{
+    width:80%;
+    margin:6vw auto 7vw;
+    background-color:#fff;
+    padding:5vw;
+    box-sizing: border-box;
+}
+#article_title{
+    font-size:1.6vw;
+    font-weight:600;
+}
+#article_pnd{
+    margin-top:1.5vw;
+    padding-bottom:2vw;
+    border-bottom:1px solid #ccc;
+    font-size:0.9vw;
+    color:#959595;
+}
+
+#article_photo{
+    width:90%;
+    margin:3vw auto 3vw;
+    height:30vw;
+    background:url("../img/article1.jpg") no-repeat;
+    background-size: cover;
+}
+#article_text{
+    width:90%;
+    margin:0 auto;
+    text-align:justify;
+    line-height: 2vw;
+    font-size:1vw;
+}
+
+.golist{
+    border:1px solid #ed7110;
+    width:8%;
+    margin:5vw auto 0;
+
+}
+
+.golist a{
+    display:block;
+    text-align:center;
+    padding:0.5vw;
+    color:#ed7110;
+}
+.golist a:hover{
+    background-color:#ed7110;
+    color:#fff;
+}

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/vehicle.css" type="text/css"/>
     <script src="js/jquery-3.6.0.js" type="text/javascript" text="javascript"></script>
     <script src="js/vehicle.js" type="text/javascript" text="javascript"></script>
+
+    <link rel="stylesheet" href="aos/dist/aos.css"/>
+    <script src="aos/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -17,15 +20,14 @@
         <nav>
             <ul class="gnb">
                 <li><a href="attr.html">여행지</a></li>
-                <li><a href="#">여행테마</a></li>
-                <li><a href="#">여행정보</a>
+                <li><a href="theme.html">여행테마</a></li>
+                <li><a href="vehicle.html">여행정보</a>
                     <ul class="submenu">
-                        <li><a href="#">이동수단</a></li>
-                        <li><a href="#">날씨정보</a></li>
-                        <li><a href="#">의료기관</a></li>
+                        <li><a href="vehicle.html">이동수단</a></li>
+                        <li><a href="hospital.html">의료기관</a></li>
                     </ul>
                 </li>
-                <li><a href="#">ABOUT JEJU</a>
+                <li><a href="history.html">ABOUT JEJU</a>
                     <ul class="submenu">
                         <li><a href="history.html">역사정보</a></li>
                         <li><a href="article.html">보도자료</a></li>
@@ -36,7 +38,7 @@
     </header>
     <div class="clear"></div>
 
-    <div id="attr_title">
+    <div id="attr_title" data-aos="fade-up" data-aos-duration="1000">
         <h1 id="at1">이동수단</h1>
         <p id="at2">무엇을 타고 여행하시나요?<br/># 버스<br/># 렌트카<br/># 택시</p>
     </div>
@@ -387,14 +389,5 @@
     </footer>
 
 
-
-
-
-
-
-
-
-
-    
 </body>
 </html>

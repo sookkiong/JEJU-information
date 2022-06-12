@@ -5,8 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Have A Nice JEJU > 여행테마</title>
+
+    <link rel="stylesheet" href="css/theme.css" type="text/css"/>
+    <script src="js/jquery-3.6.0.js" type="text/javascript" text="javascript"></script>
+    <script src="js/theme.js" type="text/javascript" text="javascript"></script>
+
+    <link rel="stylesheet" href="aos/dist/aos.css"/>
+    <script src="aos/dist/aos.js"></script>
 </head>
 <body>
+    <header>
+        <div id="gohome"><a href="index.html">HOME</a></div>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="attr.html">여행지</a></li>
+                <li><a href="theme.html">여행테마</a></li>
+                <li><a href="vehicle.html">여행정보</a>
+                    <ul class="submenu">
+                        <li><a href="vehicle.html">이동수단</a></li>
+                        <li><a href="hospital.html">의료기관</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html">ABOUT JEJU</a>
+                    <ul class="submenu">
+                        <li><a href="history.html">역사정보</a></li>
+                        <li><a href="article.html">보도자료</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="clear"></div>
+
+    <div id="attr_title" data-aos="fade-up" data-aos-duration="2000">
+        <h1 id="at1">여행테마</h1>
+        <p id="at2">누구와 함께 떠나시나요?<br/># 가족과<br/># 친구와<br/># 아이와 함께</p>
+    </div>
+
+    <div id="vehicle_tab">
+        <p class="tab_text">With</p>
+        
+        <ul class="tabs">
+            <li class="tabon"><a href="#family_contents">가족</a></li>
+            <li><a href="#friend_contents">친구</a></li>
+            <li><a href="#child_contents">아이</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div id="family_contents" class="contents">
+        <ul id="contents_wrap">
+            <li id="f_content1" class="content"><a href="#">
+                <p class="content_text">제주 설화와 역사가<br/>담긴 향토여행</p>
+            </a></li>
+            <li id="f_content2" class="content"><a href="#">
+                <p class="content_text">부모님과<br/>제주의 자연 느끼기</p>
+            </a></li>
+            <li id="f_content3" class="content"><a href="#">
+                <p class="content_text">제주도의<br/>로컬 돌담길 걷기</p>
+            </a></li> 
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    
+
+    <div id="friend_contents" class="contents">
+        <ul id="contents_wrap">
+            <li id="fr_content1" class="content"><a href="#">
+                <p class="content_text">제주에서 즐기는<br/>빈티지 쇼핑 여행</p>
+            </a></li>
+            <li id="fr_content2" class="content"><a href="#">
+                <p class="content_text">오직<br/>제주에서만 가능한 여행</p>
+            </a></li>
+            <li id="fr_content3" class="content"><a href="#">
+                <p class="content_text">제주도<br/>서쪽 마을 투어</p>
+            </a></li> 
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div id="child_contents" class="contents">
+        <ul id="contents_wrap">
+            <li id="cd_content1" class="content"><a href="#">
+                <p class="content_text">알고보면 쓸데많은<br/>신비한 제주여행</p>
+            </a></li>
+            <li id="cd_content2" class="content"><a href="#">
+                <p class="content_text">제주<br/>주말체험</p>
+            </a></li>
+            <li id="cd_content3" class="content"><a href="#">
+                <p class="content_text">아이와 함께<br/>제주도 신비로운 동굴 탐험</p>
+            </a></li> 
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div id="popup_list_family" class="popup_list">
+        <div class="popup_list_inner">
+            <p class="pt_title">[제주 설화와 역사가 담긴 향토여행]</p>
+
+            <ul class="day_list">
+                <li><span>Day 1</span>제주국제공항 → 제주향교 → 제주성지 → 오현단</li>
+                <li><span>Day 2</span>칠머리길 → 삼성혈 → 산지등대 → 고집돌우럭(제주공항점)</li>
+                <li><span>Day 3</span>연북정 → 평화통일 불사리탑 → 제주돌문화공원 → 손맛촌</li>
+            </ul>
+
+            <button class="popup_close">닫기</button>
+        </div>
+    </div>
+
+    <div id="popup_list_friend" class="popup_list">
+        <div class="popup_list_inner">
+            <p class="pt_title">[제주에서 즐기는 빈티지 쇼핑 여행]</p>
+
+            <ul class="day_list">
+                <li><span>Day 1</span>제주국제공항 → 월척수산 → 관덕정</li>
+                <li><span>Day 2</span>탑동 → 아라리오뮤지엄동문모텔1 → 에브리바디빈티지 → 사라봉</li>
+                <li><span>Day 3</span>서쪽가게 → 명월국민학교 → 명월팽나무군란 → 느지리오름(망오름)</li>
+            </ul>
+
+            <button class="popup_close">닫기</button>
+        </div>
+    </div>
+
+    <div id="popup_list_child" class="popup_list">
+        <div class="popup_list_inner">
+            <p class="pt_title">[알고보면 쓸데많은 신비한 제주여행]</p>
+
+            <ul class="day_list">
+                <li><span>Day 1</span>함덕백사장 & 서우봉 → 너븐숭이 4.3 기념관</li>
+                <li><span>Day 2</span>김녕 지질트레일 → 비자림</li>
+                <li><span>Day 3</span>제주추사관 → 추사적거지 → 소인국테마파크</li>
+            </ul>
+
+            <button class="popup_close">닫기</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copylogo">
+            <p>ⓒ 2022. Sohn Soo Kyung All Rights reserved.</p>
+            <div class="f_logo"></div>
+        </div>
+        <div class="clear"></div>
+    </footer>
     
 </body>
 </html>

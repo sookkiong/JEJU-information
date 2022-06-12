@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+AOS.init();
 //gnb 메뉴 작동
 $(".gnb>li").on("mouseover",function(){
 	$(".submenu").stop().slideDown(300);
@@ -13,13 +14,6 @@ $(".gnb>li").on("mouseout",function(){
 $('.map a').click(function(e)
 {
 	//e.preventDefault();   
-});
-
-//map 작동
-$(".map").on("click",function(){
-	//$(".map").removeClass("mapon");
-	//$(this).addClass("mapon");
-
 });
 
 // map 구역 별로 띄우기

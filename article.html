@@ -9,92 +9,94 @@
     <link rel="stylesheet" href="css/article.css" type="text/css"/>
     <script src="js/jquery-3.6.0.js" type="text/javascript" text="javascript"></script>
     <script src="js/article.js" type="text/javascript" text="javascript"></script>
+
+    <link rel="stylesheet" href="aos/dist/aos.css"/>
+    <script src="aos/dist/aos.js"></script>
 </head>
 <body>
 
-<header>
-    <h1 id="gohome"><a href="#">HOME</a></h1>
+    <header>
+        <div id="gohome"><a href="index.html">HOME</a></div>
 
-    <nav>
-        <ul class="gnb clearfix">
-            <li><a href="attr.html">여행지</a></li>
-            <li><a href="theme.html">여행테마</a></li>
-            <li><a href="info.html">여행정보</a>
-                <ul class="submenu">
-                    <li><a href="#">이동수단</a></li>
-                    <li><a href="#">날씨정보</a></li>
-                    <li><a href="#">의료기관</a></li>
-                </ul>
-            </li>
-            <li><a href="#">ABOUT JEJU</a>
-                <ul class="submenu">
-                    <li><a href="#">역사자료</a></li>
-                    <li><a href="article.html">보도자료</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
-<div class="clear"></div>
+        <nav>
+            <ul class="gnb">
+                <li><a href="attr.html">여행지</a></li>
+                <li><a href="theme.html">여행테마</a></li>
+                <li><a href="vehicle.html">여행정보</a>
+                    <ul class="submenu">
+                        <li><a href="vehicle.html">이동수단</a></li>
+                        <li><a href="hospital.html">의료기관</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html">ABOUT JEJU</a>
+                    <ul class="submenu">
+                        <li><a href="history.html">역사정보</a></li>
+                        <li><a href="article.html">보도자료</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="clear"></div>
 
-<div id="pagetitle">
+<div id="pagetitle" data-aos="fade-up" data-aos-duration="2000">
     <p class="pt">Article.</p>
 </div>
 
 <div id="article_wrap">
     <div id="topinfo" class="clearfix">
-        <div id="arti_num">전체 <span class="an_color">7</span>건</div>
+        <div id="arti_num">전체 <span class="an_color">5</span>건</div>
         <input type="text" placeholder="기사를 검색해보세요.">
     </div>
 
     <div class="article_inner">
         <div id="articlebg">
             <ul>
-                <li class="article"><a href="#">
+                <li class="article"><a href="article_in.html">
                     <div class="arti_left">
-                        <div class="arti_title">'옛 한림성당 종탑' 제주도 등록문화재 된다.</div>
-                        <div class="arti_maintext">한국전쟁 이후 건립된 제주도의 '옛 한림성당 종탑'이 등록문화재가 된다. 제주도 세계유산본부는 1955년 제주시 한림읍에 만들어진 '옛 한림성당 종탑'을 제주도 등록 문화재로 지정하기 위해...</div>
-                        <div class="date">22.05.11</div>
+                        <div id="arti_title1" class="arti_title"></div>
+                        <div id="arti_maintext1" class="arti_maintext"></div>
+                        <div id="date1" class="date"></div>
                     </div>
                     <div id="ar1" class="arti_right"></div>
                     <div class="clear"></div>
                 </a></li>
 
-                <li class="article"><a href="#">
+                <li class="article"><a href="article_in.html">
                     <div class="arti_left">
-                        <div class="arti_title">"전력 남아도는데 어째요"...제주 태양광 과잉에 블랙아웃 우려"</div>
-                        <div class="arti_maintext">김기환(61)씨는 2020년 초 제주시 애월읍 납읍리에 있는 2500평 규모의 감귤원 터 일부에 98㎾ 규모의 태양광 발전시설을 들였다. 적금과 은행 대출 등으로 마련한 1억8천만원을 쏟아부었다. 그해 8월부터 매달 250만원 정도의 수입이...</div>
-                        <div class="date">22.05.10</div>
+                        <div id="arti_title2" class="arti_title"></div>
+                        <div id="arti_maintext2" class="arti_maintext"></div>
+                        <div id="date2" class="date">22.05.10</div>
                     </div>
                     <div id="ar2" class="arti_right"></div>
                     <div class="clear"></div>
                 </a></li>
 
-                <li class="article"><a href="#">
+                <li class="article"><a href="article_in.html">
                     <div class="arti_left">
-                        <div class="arti_title">제주공항 국제선 운항 재개 움직임</div>
-                        <div class="arti_maintext">다음달로 예정된 제주지역 무사증 입국 재개를 앞두고 제주 기점 국제선 항공기 운항 재개를 위한 움직임이 본격화되고 있다. 10일 제주관광공사에 따르면, 싱가포르 스쿠트항공이 최근 국토교통부에 다음달 1일부터 30일까지 매주...</div>
-                        <div class="date">22.05.09</div>
+                        <div id="arti_title3" class="arti_title"></div>
+                        <div id="arti_maintext3" class="arti_maintext"></div>
+                        <div id="date3" class="date"></div>
                     </div>
                     <div id="ar3" class="arti_right"></div>
                     <div class="clear"></div>
                 </a></li>
 
-                <li class="article"><a href="#">
+                <li class="article"><a href="article_in.html">
                     <div class="arti_left">
-                        <div class="arti_title">4·3트라우마센터, 2년 만에 이용자 75% 증가</div>
-                        <div class="arti_maintext">제주4·3 경험세대 등 국가폭력 피해자 심리치유를 목적으로 문을 연 제주4·3트라우마센터에 4·3 유족들의 이용이 늘고 있다. 제주4·3트라우마센터는 지난달 기준 등록이용자가 833명으로 집계됐다고 9일 밝혔다. 이는 개소...</div>
-                        <div class="date">22.05.06</div>
+                        <div id="arti_title4" class="arti_title"></div>
+                        <div id="arti_maintext4" class="arti_maintext"></div>
+                        <div id="date4" class="date"></div>
                     </div>
                     <div id="ar4" class="arti_right"></div>
                     <div class="clear"></div>
                 </a></li>
 
-                <li class="article"><a href="#">
+                <li class="article"><a href="article_in.html">
                     <div class="arti_left">
-                        <div class="arti_title">‘투약 오류’ 숨진 제주 12개월 영아 유족, 병원·국가 상대 손배소송</div>
-                        <div class="arti_maintext">코로나19 확진 판정을 받고 제주대학교병원에서 입원 치료를 받던 생후 12개월 영아가 숨진 사건과 관련해 유족들이 병원과 국가를 상대로 10억원대 소송을 제기했다. 유족 쪽 법률대리인인...</div>
-                        <div class="date">22.05.04</div>
+                        <div id="arti_title5" class="arti_title"></div>
+                        <div id="arti_maintext5" class="arti_maintext"></div>
+                        <div id="date5" class="date"></div>
                     </div>
                     <div id="ar5" class="arti_right"></div>
                     <div class="clear"></div>
@@ -105,7 +107,6 @@
                 <ul id="page" class="clearfix">
                     <li id="prev"><a href="#"></a></li>
                     <li class="pageon"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
                     <li id="next"><a href="#"></a></li>
                 </ul>
              </div>
